@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Collection</title>
+  </head>
+  <body>
+    {{#results}}
+      <span>{{series}}</span>
+      <span>{{issue}}</span>
+      {{#creators}}
+        <span>{{author}}</span>
+        <span>{{artist}}</span>
+      {{/creators}}
+      <span>{{publisher}}</span>
+      <br>
+    {{/results}}
+
+
+    <form action='/' method='post'>
+      <label for="series">Series</label>
+      <input type="text" name="series">
+      <br>
+      <label for="issue">Issue</label>
+      <input type="number" name="issue">
+      <br>
+      <label for="author">Author</label>
+      <input type="text" name="author">
+      <br>
+      <label for="artist">Artist</label>
+      <input type="text" name="artist">
+      <br>
+      <label for="publisher">Publisher</label>
+      <input type="text" name="publisher">
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
